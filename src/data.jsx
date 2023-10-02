@@ -5,7 +5,7 @@ const projects = [
         technologies: ["Python", "NumPy"],
         description: "Built from scratch. Acquired 97% accuracy on the MNIST Dataset.",
         repoLink: "https://github.com/Ben12002/Neural-Network-from-Scratch",
-        thumbnail: "public/thumbnails/nn.svg",
+        thumbnail: "/thumbnails/nn.svg",
         primaryColor: "#344f9e",
         width: '200px'
     },
@@ -15,7 +15,7 @@ const projects = [
         technologies: ["Ruby on Rails", "HTML", "CSS", "JS"],
         description: "A full-stack social media web application.",
         repoLink: "https://github.com/Ben12002/learnbook",
-        thumbnail: "public/thumbnails/learnbook2.png",
+        thumbnail: "/thumbnails/learnbook2.png",
         primaryColor: "#344f9e",
         width: '400px'
     },
@@ -25,7 +25,7 @@ const projects = [
         technologies: ["Ruby", "RSpec"],
         description: "Command line chess written in Ruby.",
         repoLink: "https://github.com/Ben12002/chess",
-        thumbnail: "public/thumbnails/chess.png",
+        thumbnail: "/thumbnails/chess.png",
         primaryColor: "#344f9e",
         width: '400px'
     },
@@ -35,7 +35,7 @@ const projects = [
         technologies: ["React", "JS"],
         description: "Don't click on the same pokemon more than once!",
         repoLink: "https://github.com/Ben12002/memory-card",
-        thumbnail: "public/thumbnails/memorygame.png",
+        thumbnail: "/thumbnails/memorygame.png",
         primaryColor: "#344f9e",
         width: '400px'
     }
