@@ -19,7 +19,7 @@ function AboutMeSection(){
                     In my free time, I enjoy calisthenics, photography, and meeting new people.
                 </p>
                 <figure>
-                    <img width="400px" src="public/photos/tadaoando.jpeg"></img>
+                    <img width="400px" src="/photos/tadaoando.jpeg"></img>
                     <figcaption>Osaka Prefectural Sayamaike Museum</figcaption>
                 </figure>
             </div>
