@@ -1,0 +1,11 @@
+.resumesection {
+    display: flex;
+    flex-direction: column;
+}
+
+.resumesection .content {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}

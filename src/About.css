@@ -1,0 +1,8 @@
+#aboutheading .content {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#aboutheading .content p {
+    text-align: left;
+}

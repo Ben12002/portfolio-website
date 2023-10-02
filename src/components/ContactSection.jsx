@@ -1,8 +1,9 @@
 function ContactSection(){
 
     return(
-        <div>
-            <h2>Contact Me</h2>
+        <div id="contactheading">
+            <h2>CONTACT</h2>
+            
         </div>
     )
 }

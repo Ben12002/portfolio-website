@@ -5,13 +5,32 @@
 .portfolio, #root {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 200px;
+  align-items: flex-start;
+  gap: 40px;
   padding: 0px 2rem 0px;
+  max-width: 800px;
 }
 
+/*----------Section Card----------*/
+.portfolio > div:nth-child(n+2) {
+  --section-bg-color: #043546;
+  /* background-color: var(--section-bg-color); */
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  /* border: 1px solid rgba(232, 178, 151, 0.2); */
+  width: 100%;
+  padding: 1.5rem;
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
 
-.portfolio > div {
-  
+  /* border-radius: 0px;
+  background: #0f172a;
+  box-shadow:  9px -9px 18px #0d1425,
+              -9px 9px 18px #111a2f; */
+}
+
+.portfolio h2 {
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  display: flex;
+  margin-bottom: 2rem;
+
 }

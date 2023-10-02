@@ -1,81 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato&family=Roboto+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Lato:wght@300;400;700&family=Raleway:wght@100;200;300;400;500;600;700&family=Roboto+Mono:wght@400;600&display=swap');
+
+/* Dark Theme */
+/* --main-bg-color: rgb(15 23 42);
+  --main-text-color: rgba(255, 255, 255, 0.87);
+  --main-text-font: 'Anonymous Pro';
+  --main-header-font: 'Raleway'; */
+
+  :root {
+    --main-bg-color: #0f172a;
+    --main-color: #ffffff;
+    --secondary-color: #b5bedb;
+    --accent-color: #64ffda; 
+
+
+    --main-text-font: 'Lato';
+    --main-header-font: 'Raleway';
+    
+  
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+
+
+    background: rgb(2,0,36);
+    background: linear-gradient(130deg, rgba(2,0,36,1) 0%, rgba(15,23,42,1) 0%, rgba(17,26,47,1) 100%);
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+    line-height: 1.6;
+    font-weight: 400;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
 
 div, p {
-  font-family: 'Anonymous Pro', monospace;
+  font-family: var(--main-text-font), sans-serif;
+  color: var(--secondary-color);
 }
 
 h1, h2, h3, h4, .heading {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--main-header-font), sans-serif;
   font-weight: 600;
+  color: var(--main-color);
 }
 
-:root {
-  line-height: 1.5;
-  font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+a {
+  font-family: var(--main-header-font), sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-/* ----------------RESET------------------ */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+.icon {
+  fill: var(--accent-color);
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+.interactable {
+  color: var(--accent-color);
+  font-family: var(--main-header-font);
+  font-weight: 700;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* ------------------------------------------- */
 
 body {
   margin: 0;
@@ -96,4 +85,43 @@ h2 {
   font-size: 2em;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+}
+
+span.bold {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+
+a::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.2s linear; 
+}
+
+figcaption {
+  font-size: 0.65rem;
+  text-align: right;
+}

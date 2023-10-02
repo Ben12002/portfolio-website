@@ -1,12 +1,28 @@
+import '../About.css'
+
+
 function AboutMeSection(){
 
 
     return(
-        <div>
-            <h2>About Me</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+        <div id="aboutheading">
+            <h2>ABOUT</h2>
+            <div className="content">
+                <p>
+                    Hi! I'm Ben, a computer science student at UBC with 
+                    a particular interest in machine learning and web development. 
+                    <br></br>
+                    <br></br>
+                    I enjoy building things, solving problems, and exploring different layers of abstraction.
+                    <br></br>
+                    <br></br>
+                    In my free time, I enjoy calisthenics, photography, and meeting new people.
+                </p>
+                <figure>
+                    <img width="400px" src="public/photos/tadaoando.jpeg"></img>
+                    <figcaption>Osaka Prefectural Sayamaike Museum</figcaption>
+                </figure>
+            </div>
         </div>
     )
 }

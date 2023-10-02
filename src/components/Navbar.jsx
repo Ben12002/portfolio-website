@@ -2,11 +2,11 @@ function Navbar() {
 
     return(
         <div className="navbar">
-            <a>Projects</a>
-            <a>About Me</a>
-            <a>Photography</a>
-            <a>Resume</a>
-            <a>Contact Me</a>
+            <a href="#projectsheading">PROJECTS</a>
+            <a href="#aboutheading">ABOUT</a>
+            <a href="#photographyheading">PHOTOGRAPHY</a>
+            <a href="#resumeheading">RESUME</a>
+            <a href="#contactheading">CONTACT</a>
         </div>
     )
 }
