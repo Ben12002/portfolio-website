@@ -6,7 +6,6 @@ function Navbar() {
             <a href="#aboutheading">ABOUT</a>
             <a href="#photographyheading">PHOTOGRAPHY</a>
             <a href="#resumeheading">RESUME</a>
-            <a href="#contactheading">CONTACT</a>
         </div>
     )
 }
